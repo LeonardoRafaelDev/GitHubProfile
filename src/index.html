@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <title>GitHub Profile</title>
   </head>
   <body>
-    <main class="mx-auto my-32 max-w-4xl flex justify-center">
+    <main class="mx-auto my-32 max-w-4xl flex justify-center p-4">
       <div class="flex-col">
+        <p id="error"></p>
         <h1 class="text-2xl">Bora pesquisar seu github?</h1>
-        <h2 class="text-lg">Pesquise o perfil do github de quem voce quiser!</h2>
+        <h2 class="text-lg mb-2">Pesquise o perfil do github de quem voce quiser!</h2>
         <div class="mb-6">
-          <div class="relative">
+          <div class="search relative">
             <input
               type="search"
-              id="input"
-              class="border-2 border-black shadow-sm rounded-lg block w-full p-2.5 pr-10"
+              id="searchInput"
+              class="border-2 absolute border-black shadow-sm rounded-lg block w-full p-2.5 pr-10"
               placeholder="Digite seu perfil no githhub"
               required />
-            <button type="submit" class="absolute top-4 right-4">
+            <button id="searchButton" class="absolute right-0 p-4 rounded-r-lg bg-blue-500">
               <svg
                 class="text-gray-600 h-4 w-4 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,6 +49,22 @@
         </div>
       </div>
     </main>
+    <section id="Profile" class="p-4 text-white font-Inter font-bold mx-auto my-32 w-full max-w-4xl flex justify-center"></section>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
+
+<!---
+preciso de uma parte pra 
+  - [X] Login - login
+  - [X] Avatar - avatar_url
+  - [X] Name - name
+  - [X] Company - company
+  - [x]] Blog - blog
+  - [x] Bio - bio
+  - [] URL - url
+  - [X] Followers - followers
+  - [X] Following - following
+  - [] Public Repos - public_repos
+  - [X] Location - location
+-->
