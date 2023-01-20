@@ -7,17 +7,17 @@ O objetivo será criar um projeto que consuma a API de Profiles do Github e mont
   - Pode usar async/await para deixar mais bonitinho, ou usar o .then() msm.
 - Dados a serem consumidos
 
-  - [] Login - login
-  - [] Avatar - avatar_url
-  - [] Name - name
-  - [] Company - company
-  - [] Blog - blog
-  - [] Bio - bio
-  - [] URL - url
-  - [] Followers - followers
-  - [] Following - following
-  - [] Public Repos - public_repos
-  - [] Location - location
+  - [x] Login - login
+  - [x] Avatar - avatar_url
+  - [x] Name - name
+  - [x] Company - company
+  - [x] Blog - blog
+  - [x] Bio - bio
+  - [x] URL - url
+  - [x] Followers - followers
+  - [x] Following - following
+  - [x] Public Repos - public_repos
+  - [x] Location - location
 
 - Layout de exemplo
 
