@@ -34,7 +34,7 @@ function startApp(username) {
   requestuserinfo(baseUrl, username);
 
   setTimeout(function () {
-    if (user.detail) {
+    if (user.message === "Not Found") {
       erroMessage.style.display = "block";
       container.style.display = "none";
     } else {
@@ -66,7 +66,7 @@ function createCard() {
       <i class="mr-2 fa-solid fa-2x fa-location-dot"></i>
       <h2 class="text-2xl">${user.location}</h2>
     </div>
-    <h2 class="text-xl mb-2">Blog: <a href="${user.blog}">${user.blog}</a></h2>
+    <h2 class="text-xl mb-2">Blog: <a target="_blank" href="${user.blog}">${user.blog}</a></h2>
     <h2></h2>
     <div class="flex flex-col md:flex-row mb-2">
       <p class="text-xl mr-2">Seguindo: ${user.following}</p>
@@ -77,7 +77,7 @@ function createCard() {
       <p class="text-xl"> Respositorios Publicos: ${user.public_repos}</p>
     </div>
     <div>
-      <a href="${user.html_url}">
+      <a target="_blank" href="${user.html_url}">
         <i class="fa-brands fa-2x fa-github"></i>
       </a>
     </div>
